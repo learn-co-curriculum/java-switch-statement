@@ -44,9 +44,11 @@ what happens if we omit the `break` statement in a little bit.
 `switch`. The `default` statement sequence is executed if no `case` matches. If
 the `default` statement is omitted, then no action will take place.
 
-The advantage of switch statements are that they tend to be more efficient than
-a typical if-else-if-else block. Let's look at an example of an if-else-if-else
-block that could benefit from being a switch statement:
+The advantage of using a `switch` statement over a typical chained conditional
+(if-else-if-else block) is the readability of a `switch` statement. Since
+`switch` statements tend to be easier to read by a developer, they also can be
+easier to maintain. Let's look at an example of a chained conditional that could
+be transformed into a `switch`statement:
 
 ```java
 char grade = 'B';
@@ -151,7 +153,7 @@ Invalid letter grade
 Now let's put the `break` statements back in and then step-over to see the line
 of execution move to the `case B` block:
 
-![enter-case-b](https://curriculum-content.s3.amazonaws.com/java-mod-1/switch-statement/intellij-debugger-enter-case-b.png)
+![enter-case-b](https://curriculum-content.s3.amazonaws.com/java-mod-1/switch-statements/intellij-debugger-case-b.png)
 
 We're back to where we expect everything to be! Now step-over again, and we'll
 hit the `break` statement:
